@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Flight Tracker</string>
+    <string name="noInternet">No internet</string>
+    <string name="success">Success</string>
+    <string name="loading">Loading</string>
+    <string name="fill_all_fields">Please fill all fields</string>
+    <string name="list_empty">Nothing To show</string>
+</resources>

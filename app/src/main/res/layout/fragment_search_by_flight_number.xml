@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:layoutDirection="ltr">
+
+
+    <TextView
+        android:id="@+id/txt_search_by_flight_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Search By Flight Number:"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_search_by_flight_num"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/edit_text_background"
+        android:ems="10"
+        android:hint="Enter Flight Number"
+        android:inputType="textPersonName"
+        android:text="IRZ157"
+        android:textColor="@android:color/white"
+        android:textColorHint="#AE9797"
+        app:layout_constraintEnd_toStartOf="@+id/btn_search_by_flight_num"
+        app:layout_constraintStart_toStartOf="@+id/txt_search_by_flight_num"
+        app:layout_constraintTop_toBottomOf="@+id/txt_search_by_flight_num" />
+
+    <Button
+        android:id="@+id/btn_search_by_flight_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:background="@color/colorAccent"
+        android:text="Search"
+        app:layout_constraintBottom_toBottomOf="@+id/et_search_by_flight_num"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/et_search_by_flight_num" />
+
+    <TextView
+        android:id="@+id/txt_departure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="DEPARTURE:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@android:color/white"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_search_by_flight_num"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/txt_departure_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="8-3-2020 10:30 PM"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@android:color/white"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_departure"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txt_departure"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/txt_arrival"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="ARRIVAL:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@android:color/white"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_destination"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/txt_arrival_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="8-3-2020 10:30 PM"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@android:color/white"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_arrival"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txt_arrival"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/txt_airline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="16dp"
+        android:text="Airline"
+        android:textColor="@android:color/white"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/txt_airline_dummy"
+        app:layout_constraintTop_toBottomOf="@+id/txt_departure"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/txt_flightNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="FlightNumber"
+        android:textColor="@android:color/white"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/txt_airline"
+        app:layout_constraintStart_toStartOf="@+id/txt_airline"
+        app:layout_constraintTop_toBottomOf="@+id/txt_airline"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/txt_origin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Origin"
+        android:textColor="@android:color/white"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/txt_flightNumber"
+        app:layout_constraintStart_toStartOf="@+id/txt_flightNumber"
+        app:layout_constraintTop_toBottomOf="@+id/txt_flightNumber"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/txt_aircraft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Aircraft"
+        android:textColor="@android:color/white"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/txt_origin"
+        app:layout_constraintStart_toStartOf="@+id/txt_origin"
+        app:layout_constraintTop_toBottomOf="@+id/txt_origin"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/txt_destination"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Destination"
+        android:textColor="@android:color/white"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/txt_aircraft"
+        app:layout_constraintStart_toStartOf="@+id/txt_aircraft"
+        app:layout_constraintTop_toBottomOf="@+id/txt_aircraft"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/btn_track_by_flight_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:text="Track"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/txt_arrival_time"
+        app:layout_constraintEnd_toEndOf="@+id/txt_departure_time"
+        app:layout_constraintTop_toBottomOf="@+id/txt_departure_time" />
+
+
+    <TextView
+        android:id="@+id/txt_airline_dummy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Airline:"
+        android:textColor="@android:color/white"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/txt_departure"
+        app:layout_constraintTop_toBottomOf="@+id/txt_departure"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/txt_flightNumber_dummy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="FlightNumber:"
+        android:textColor="@android:color/white"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/txt_airline_dummy"
+        app:layout_constraintTop_toBottomOf="@+id/txt_airline_dummy"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/txt_origin_dummy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Origin:"
+        android:textColor="@android:color/white"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/txt_flightNumber_dummy"
+        app:layout_constraintTop_toBottomOf="@+id/txt_flightNumber_dummy"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/txt_aircraft_dummy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Aircraft:"
+        android:textColor="@android:color/white"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/txt_origin_dummy"
+        app:layout_constraintTop_toBottomOf="@+id/txt_origin_dummy"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/txt_destination_dummy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Destination:"
+        android:textColor="@android:color/white"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/txt_aircraft_dummy"
+        app:layout_constraintTop_toBottomOf="@+id/txt_aircraft_dummy"
+        tools:visibility="visible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

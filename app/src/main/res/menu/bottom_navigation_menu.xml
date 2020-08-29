@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/searchFragment"
+        android:title="Search"
+        android:icon="@drawable/ic_baseline_search_24"/>
+    <item
+        android:id="@+id/userFlightsFragment"
+        android:title="Your Flights"
+        android:icon="@drawable/ic_baseline_flight_24"/>
+</menu>

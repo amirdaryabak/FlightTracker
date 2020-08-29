@@ -1,0 +1,121 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+apply plugin: "androidx.navigation.safeargs.kotlin"
+apply plugin: 'dagger.hilt.android.plugin'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+
+    defaultConfig {
+        applicationId "com.sedeghzare.flighttracker"
+        minSdkVersion 17
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8.toString()
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation 'androidx.core:core-ktx:1.3.1'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.13'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    // Material Design
+    implementation 'com.google.android.material:material:1.3.0-alpha02'
+
+    // Architectural Components
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0"
+
+    def room_version = "2.2.5"
+    implementation "androidx.room:room-runtime:$room_version"
+    implementation "androidx.room:room-ktx:$room_version"
+    kapt "androidx.room:room-compiler:$room_version"
+
+    // retrofit
+    def retrofit = "2.8.1"
+    implementation "com.squareup.retrofit2:retrofit:$retrofit"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofit"
+
+    // okhttp3
+    def okhttp3 = "4.6.0"
+    implementation "com.squareup.okhttp3:okhttp:$okhttp3"
+    implementation "com.squareup.okhttp3:logging-interceptor:$okhttp3"
+
+    // Coroutines
+    def kotlinx_coroutines_version = "1.3.5"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$kotlinx_coroutines_version"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$kotlinx_coroutines_version"
+
+    // Coroutine Lifecycle Scopes
+    def coroutine_Lifecycle_Scopes = "2.2.0"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$coroutine_Lifecycle_Scopes"
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:$coroutine_Lifecycle_Scopes"
+
+    // Navigation Components
+    def navigation_components = "2.3.0"
+    implementation "androidx.navigation:navigation-fragment-ktx:$navigation_components"
+    implementation "androidx.navigation:navigation-ui-ktx:$navigation_components"
+
+    // Glide
+    def Glide = "4.11.0"
+    implementation "com.github.bumptech.glide:glide:$Glide"
+    kapt "com.github.bumptech.glide:compiler:$Glide"
+
+    // Dagger Core
+    def dagger_core = "2.28.1"
+    implementation "com.google.dagger:dagger:$dagger_core"
+    kapt "com.google.dagger:dagger-compiler:$dagger_core"
+
+    // Activity KTX for viewModels()
+    implementation "androidx.activity:activity-ktx:1.1.0"
+
+    def hilt_version = "2.28-alpha"
+    implementation "com.google.dagger:hilt-android:$hilt_version"
+    kapt "com.google.dagger:hilt-android-compiler:$hilt_version"
+
+    def hilt_viewmodels = "1.0.0-alpha02"
+    implementation "androidx.hilt:hilt-lifecycle-viewmodel:$hilt_viewmodels"
+    kapt "androidx.hilt:hilt-compiler:$hilt_viewmodels"
+
+    // Easy Permissions
+    implementation 'pub.devrel:easypermissions:3.0.0'
+
+    // fragment_ktx
+    def fragment_ktx = "1.2.5"
+    implementation "androidx.fragment:fragment-ktx:$fragment_ktx"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.2.0"
+
+    // Toasty
+    implementation 'com.github.GrenderG:Toasty:1.4.2'
+
+    // Lottie
+    implementation 'com.airbnb.android:lottie:3.4.1'
+
+    // circle ImageView
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+}

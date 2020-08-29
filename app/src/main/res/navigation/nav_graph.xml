@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/logInFragment">
+
+
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.sedeghzare.flighttracker.ui.fragments.SearchFragment"
+        android:label="SearchFragment" />
+    <fragment
+        android:id="@+id/userFlightsFragment"
+        android:name="com.sedeghzare.flighttracker.ui.fragments.UserFlightsFragment"
+        android:label="UserFlightsFragment" >
+        <action
+            android:id="@+id/action_userFlightsFragment_to_logInFragment"
+            app:destination="@id/logInFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/signInFragment"
+        android:name="com.sedeghzare.flighttracker.ui.fragments.SignInFragment"
+        android:label="SignInFragment" >
+        <action
+            android:id="@+id/action_signInFragment_to_searchFragment"
+            app:destination="@id/searchFragment"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/signInFragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/logInFragment"
+        android:name="com.sedeghzare.flighttracker.ui.fragments.LogInFragment"
+        android:label="LogInFragment" >
+        <action
+            android:id="@+id/action_logInFragment_to_searchFragment"
+            app:destination="@id/searchFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_logInFragment_to_signInFragment"
+            app:destination="@id/signInFragment" />
+    </fragment>
+
+    <action
+        android:id="@+id/action_global_logInFragment"
+        app:destination="@id/logInFragment"
+        app:popUpTo="@id/nav_graph"
+        app:popUpToInclusive="true" />
+    <action
+        android:id="@+id/action_global_userFlightsFragment"
+        app:destination="@id/userFlightsFragment" />
+
+</navigation>
