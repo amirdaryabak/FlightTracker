@@ -3,6 +3,7 @@ package com.sedeghzare.flighttracker.ui.fragments
 import android.app.Dialog
 import android.content.SharedPreferences
 import android.os.Bundle
+import android.os.Handler
 import android.view.View
 import android.widget.ArrayAdapter
 import androidx.fragment.app.Fragment
@@ -224,10 +225,14 @@ class SearchByAirportFragment : Fragment(R.layout.fragment_search_by_airport) {
             searchAdapter = SearchAdapter(isArrival, searchByAirport.trackedFlights)
             searchAdapter.differ.submitList(getFakeResult())
             searchAdapter.setOnItemClickListenerIncomingFlight {
-                viewModel.star(
+                loading.show()
+                Handler().postDelayed({
+                    loading.dismiss()
+                }, 3000)
+                /*viewModel.star(
                     "Bearer " + shared.getString(USER_TOKEN, ""),
                     it.flightNumber
-                )
+                )*/
             }
         } else {
             searchAdapter = SearchAdapter(isArrival, searchByAirport.trackedFlights)

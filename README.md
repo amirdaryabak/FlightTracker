@@ -1,6 +1,6 @@
 # [FlightTracker App](https://github.com/amirdaryabak/FlightTracker.git)
 
-**NOTE** This app is my university project that show flights of Iranian airports (But I filled with dummy information now, because servers are down)
+**NOTE:** This app is my university project that show flights of Iranian airports (But I filled with dummy information now, because servers are down)
 
 **Dependencies**
 1. Room

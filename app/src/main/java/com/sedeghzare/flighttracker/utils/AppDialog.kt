@@ -9,7 +9,7 @@ import android.view.WindowManager
 import com.sedeghzare.flighttracker.R
 import kotlinx.android.synthetic.main.dialog_loading.*
 
-fun showLoading(context: Context, text: String = "Loading"): Dialog {
+fun showLoading(context: Context, text: String = "3 Second Loading just for test"): Dialog {
     val dialog = Dialog(context, R.style.AppTheme)
     try {
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
