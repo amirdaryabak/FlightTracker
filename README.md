@@ -13,8 +13,7 @@
 8. Glide
 9. Toasty
 
-![Login page](/screenshots/login.png?raw=true "Login")
-![Search page](/screenshots/search.png?raw=true "Search")
-![Loading Dialog](/screenshots/loading.png?raw=true "Loading")
-![SearchByFlightNumber page](/screenshots/byflightnumber.png?raw=true "SearchByFlightNumber")
-![UserFlights page](/screenshots/userflights.png?raw=true "UserFlights")
+<img src="/screenshots/login.png" width="300" ><img src="/screenshots/search.png" width="300" ><img src="/screenshots/loading.png" width="300" >
+
+
+<img src="/screenshots/byflightnumber.png" width="300" ><img src="/screenshots/userflights.png" width="300" >
