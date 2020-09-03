@@ -8,11 +8,11 @@
 
     <fragment
         android:id="@+id/searchFragment"
-        android:name="com.sedeghzare.flighttracker.ui.fragments.SearchFragment"
+        android:name="com.amirdaryabak.flighttracker.ui.fragments.SearchFragment"
         android:label="SearchFragment" />
     <fragment
         android:id="@+id/userFlightsFragment"
-        android:name="com.sedeghzare.flighttracker.ui.fragments.UserFlightsFragment"
+        android:name="com.amirdaryabak.flighttracker.ui.fragments.UserFlightsFragment"
         android:label="UserFlightsFragment" >
         <action
             android:id="@+id/action_userFlightsFragment_to_logInFragment"
@@ -22,7 +22,7 @@
     </fragment>
     <fragment
         android:id="@+id/signInFragment"
-        android:name="com.sedeghzare.flighttracker.ui.fragments.SignInFragment"
+        android:name="com.amirdaryabak.flighttracker.ui.fragments.SignInFragment"
         android:label="SignInFragment" >
         <action
             android:id="@+id/action_signInFragment_to_searchFragment"
@@ -32,7 +32,7 @@
     </fragment>
     <fragment
         android:id="@+id/logInFragment"
-        android:name="com.sedeghzare.flighttracker.ui.fragments.LogInFragment"
+        android:name="com.amirdaryabak.flighttracker.ui.fragments.LogInFragment"
         android:label="LogInFragment" >
         <action
             android:id="@+id/action_logInFragment_to_searchFragment"

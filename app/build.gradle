@@ -10,7 +10,7 @@ android {
     buildToolsVersion "29.0.3"
 
     defaultConfig {
-        applicationId "com.sedeghzare.flighttracker"
+        applicationId "com.amirdaryabak.flighttracker"
         minSdkVersion 17
         targetSdkVersion 29
         versionCode 1
