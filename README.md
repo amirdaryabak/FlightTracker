@@ -13,7 +13,8 @@
 8. Glide
 9. Toasty
 
-<img src="/screenshots/login.png" width="300" ><img src="/screenshots/search.png" width="300" ><img src="/screenshots/loading.png" width="300" >
+<img src="/screenshots/login.png" width="300" ><img src="/screenshots/search.png" width="300" >
 
+<img src="/screenshots/loading.png" width="300" ><img src="/screenshots/byflightnumber.png" width="300" >
 
-<img src="/screenshots/byflightnumber.png" width="300" ><img src="/screenshots/userflights.png" width="300" >
+<img src="/screenshots/userflights.png" width="300" >
